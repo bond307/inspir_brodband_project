@@ -1,0 +1,107 @@
+body {
+    background-color: #F6F6F9;
+}
+
+
+/*----######################################### header Style ###################----*/
+
+.navbar {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #fff;
+}
+
+.nav-menu {
+    display: block;
+    padding: .5rem 1rem;
+    color: #000;
+    text-decoration: none;
+    transition: color .20s ease-in-out, background-color .20s ease-in-out, border-color .20s ease-in-out;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.nav-menu:hover {
+    color: #E25B5B;
+}
+
+.signup {
+    display: block;
+    padding: .5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color .20s ease-in-out, background-color .20s ease-in-out, border-color .20s ease-in-out;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: #E25B5B;
+    border-radius: 100px;
+}
+
+.signup:hover {
+    color: #fff;
+}
+
+
+/*----######################################### end header Style ###################----*/
+
+#body {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#body .body__form {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #E25B5B;
+    padding: 20px;
+}
+
+.body__form #choose_packegs {
+    padding: .875rem 2.25rem .875rem .75rem;
+    color: #ffff;
+    background-color: #D92525;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    font-size: 18px;
+}
+
+.form-control {
+    padding: .875rem .75rem;
+    background-color: #F6F6F9;
+    background-clip: padding-box;
+    border: 1px solid #D92525;
+}
+
+.innet_input_btn{
+    width: 45px;
+    font-size: 25px;
+    border: 1px solid #D92525;
+}
+.btn-custom{
+    background-color: #D92525;
+    color: #fff;
+}
+.btn-custom:hover{
+    background-color: #a81515;
+    color: #fff;
+}
+/*----######################################### bodey header Style ###################----*/
+
+.navbar-toggler {
+    padding: .20rem .70rem;
+    border: 1px solid #D92525;
+}
+.navbar-toggler .fa-bars{
+    color: #D92525;
+}
+/*----######################################### end header Style ###################----*/
+
+
+/*----######################################### end header Style ###################----*/
+
+
+/*----######################################### end header Style ###################----*/
