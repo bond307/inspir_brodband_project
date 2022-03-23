@@ -76,29 +76,41 @@ body {
     border: 1px solid #D92525;
 }
 
-.innet_input_btn{
+.innet_input_btn {
     width: 45px;
     font-size: 25px;
     border: 1px solid #D92525;
 }
-.btn-custom{
+
+.btn-custom {
     background-color: #D92525;
     color: #fff;
 }
-.btn-custom:hover{
+
+.btn-custom:hover {
     background-color: #a81515;
     color: #fff;
 }
+
+
 /*----######################################### bodey header Style ###################----*/
 
 .navbar-toggler {
     padding: .20rem .70rem;
     border: 1px solid #D92525;
 }
-.navbar-toggler .fa-bars{
+
+.navbar-toggler .fa-bars {
     color: #D92525;
 }
+
+
 /*----######################################### end header Style ###################----*/
+
+.form-check-input:checked {
+    background-color: #D92525;
+    border-color: #D92525;
+}
 
 
 /*----######################################### end header Style ###################----*/

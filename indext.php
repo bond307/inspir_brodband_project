@@ -37,7 +37,6 @@
         </div>
     </nav>
     <!---- End headers-->
-
     <section id="body">
         <div class="col-md-6 offset-md-3">
             <div class="body__form">
@@ -60,6 +59,7 @@
                                 <input type="text" class="form-control" id="Email" placeholder="Email" name="email">
                             </div>
                         </div>
+
                         <div class="row ">
 
                             <div class="col-md-6 mb-3 ">
@@ -90,29 +90,47 @@
                             <textarea type="text" class="form-control" id="address" name="address" placeholder="Address"></textarea>
                         </div>
 
-                        <div class="row ">
+                        
 
-                            <div class="col-md-6 mb-3 ">
-                                <select class="form-select form-control" aria-label="Default select example">
-                                    <option selected disabled> Package Plan Monthly </option>
-                                    <option value=""> Package Plan Monthly  1</option>
-                                    <option value=""> Package Plan Monthly  2</option>
-                                    <option value=""> Package Plan Monthly  3</option>
-                                    <option value=""> Package Plan Monthly  4</option>
-                                    <option value=""> Package Plan Monthly  5</option>
-                                  </select>
+                        <div class="col-md-12 mb-3 row ">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" onClick="month_packeg()" value="Monthly Packeg" type="radio" name="packeg" id="month_packeg">
+                                    <label class="form-check-label" onClick="month_packeg()" for="month_packeg">
+                                        Monthly Package
+                                    </label>
+                                </div>
                             </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" onClick="yearly_packeg()" value="Yearly Packeg" type="radio" name="packeg" id="yearly_packeg">
+                                    <label class="form-check-label" onClick="yearly_packeg()" for="yearly_packeg">
+                                            Yearly Package
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
 
-                            <div class="col-md-6 mb-3 ">
-                                <select class="form-select form-control" aria-label="Default select example">
-                                    <option selected disabled>Package Plan Yearly</option>
-                                    <option value="">Package Plan Yearly 1</option>
-                                    <option value="">Package Plan Yearly 2</option>
-                                    <option value="">Package Plan Yearly 3</option>
-                                    <option value="">Package Plan Yearly 4</option>
-                                    <option value="">Package Plan Yearly 5</option>
-                                  </select>
-                            </div>
+                        <div class="col-md-12 mb-3 ">
+                            <select name="monthly_packege_list" id="monthly_packege_list" class="form-select form-control" aria-label="Default select example">
+                                <option selected disabled> Package Plan Monthly </option>
+                                <option value=""> Package Plan Monthly  1</option>
+                                <option value=""> Package Plan Monthly  2</option>
+                                <option value=""> Package Plan Monthly  3</option>
+                                <option value=""> Package Plan Monthly  4</option>
+                                <option value=""> Package Plan Monthly  5</option>
+                                </select>
+                        </div>
+
+                        <div class="col-md-12 mb-3 ">
+                            <select name="yearlly_packege_list" id="yearlly_packege_list" class="form-select form-control" aria-label="Default select example">
+                                <option selected disabled>Package Plan Yearly</option>
+                                <option value="">Package Plan Yearly 1</option>
+                                <option value="">Package Plan Yearly 2</option>
+                                <option value="">Package Plan Yearly 3</option>
+                                <option value="">Package Plan Yearly 4</option>
+                                <option value="">Package Plan Yearly 5</option>
+                                </select>
                         </div>
 
                         <div class="input-group col-md-6 mb-3">
@@ -160,5 +178,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/custom.js"></script>
+<script src="assets/js/check_packeg.js"></script>
 
 </html>
