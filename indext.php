@@ -1,46 +1,9 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!------ font wasome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Hello, world!</title>
-</head>
-
-<body>
-
-    <!---- headers-->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <img src="assets/img/logo.png">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fa fa-bars"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-menu" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-menu" href="#">PACKEGE</a></li>
-                    <li class="nav-item"><a class="nav-menu" href="#">HOW TO WORK?</a></li>
-                    <li class="nav-item"> <a class="signup" href="#">SIGNUP</a></li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
+<?php include("inc/header.php")?>
     <!---- End headers-->
     <section id="body">
         <div class="col-md-6 offset-md-3">
             <div class="body__form">
-                <form method="post" id="form">
+                <form method="post" id="form" action="Data/send_data.php">
                     <select class="form-select mb-3" onchange="packeges()" id="choose_packegs" aria-label="Default select example">
                         <option selected value="Promotional">Promotional Package</option>
                         <option value="Regular">Regular Package</option>
@@ -157,27 +120,4 @@
     </section>
 
 
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="location" data-backdrop="static" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="locationLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-
-                <div class="modal-body">
-                    <img src="assets/img/bkash.png" width="100%" height="100%" alt="">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/custom.js"></script>
-<script src="assets/js/check_packeg.js"></script>
-
-</html>
+<?php include("inc/footer.php")?>
