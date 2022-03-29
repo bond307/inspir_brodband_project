@@ -51,6 +51,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Arean: " . $area_name = $_POST["area_name"]."<br>";
 
     echo "Address: " . $address = $_POST["address"]."<br>"; 
+
+    $promotional_package = $_POST["promotional_package"];
+  $package_paln = $_POST["package_paln"];
+
+  if(isset($promotional_package )){
+    echo "Promotional Package List: " . $promotional_package ."<br>";
+  }
+  
+  if(isset($package_paln )){
+    echo "Package Plane List: " . $package_paln ."<br>";
+  }
  
     echo $packeg = $_POST["packeg"]."<br>";
  
