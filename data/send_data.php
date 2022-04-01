@@ -35,51 +35,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    
     
     if($_POST["package_type"] == "Promotional"){
-        echo "Package Type: " . $package_type = $_POST["package_type"] ."<br>";
-    }else{
-        echo "Package Type: " .  $package_type = $_POST["package_type"]."<br>";
+
+         $package_type = $_POST["package_type"];
+         $full_name = $_POST["full_name"];
+         $Mobile_Number = $_POST["Mobile_Number"];
+         $email = $_POST["email"];
+         $promo_package_thana = $_POST["promo_package_thana"];
+         $alt_mobile_number = $_POST["alt_mobile_number"];
+         $address = $_POST["address"]; 
+         $package_paln = $_POST["package_paln"];
+         $home_location = $_POST["home_location"];
+         $promo_package_plan = $_POST["promo_package_plan"];
+         $activation_Date = $_POST["activation_Date"];
+         
     }
 
-   echo "Full Name: " . $full_name = $_POST["full_name"]."<br>";
+    if($_POST["package_type"] == "Promotional"){
 
-    echo "Phone Number: " . $Mobile_Number = $_POST["Mobile_Number"]."<br>";
-
-    echo "Email: " .$email = $_POST["email"]."<br>";
-
-    echo "Thana: " .$thana = $_POST["thana"]."<br>";
-
-    echo "Arean: " . $area_name = $_POST["area_name"]."<br>";
-
-    echo "Address: " . $address = $_POST["address"]."<br>"; 
-
-    $promotional_package = $_POST["promotional_package"];
-  $package_paln = $_POST["package_paln"];
-
-  if(isset($promotional_package )){
-    echo "Promotional Package List: " . $promotional_package ."<br>";
-  }
-  
-  if(isset($package_paln )){
-    echo "Package Plane List: " . $package_paln ."<br>";
-  }
- 
-    echo $packeg = $_POST["packeg"]."<br>";
- 
-    //monthly or yearlly package selction
-    if($_POST["packeg"] =="Monthly Packeg"){
-      echo "Monthly Plana: " . $monthly_packege_list = $_POST["monthly_packege_list"]."<br>";
-    }else if($_POST["packeg"] =="Yearly Packeg"){
-      echo "Yearlly Plan: ".   $yearlly_packege_list = $_POST["yearlly_packege_list"]."<br>";
+      $package_type = $_POST["package_type"];
+      $full_name = $_POST["full_name"];
+      $Mobile_Number = $_POST["Mobile_Number"];
+      $email = $_POST["email"];
+      $regular_package_thana = $_POST["regular_package_thana"];
+      $alt_mobile_number = $_POST["alt_mobile_number"];
+      $address = $_POST["address"]; 
+      $m_y_package = $_POST["packeg"]; 
+       if($_POST["packeg"] =="Monthly Packeg"){
+         $monthly_packege_list = $_POST["monthly_packege_list"];
+       }else if($_POST["packeg"] =="Yearly Packeg"){
+         $yearlly_packege_list = $_POST["yearlly_packege_list"];
+       }
+      $home_location = $_POST["home_location"];
+      $activation_Date = $_POST["activation_Date"];
+      
     }
-
-    
-
-    echo "Date:" .$date = $_POST["date"]."<br>";
-
-
-
-
-
 
 }else{
     echo "error";

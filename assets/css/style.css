@@ -112,6 +112,15 @@ body {
     border-color: #D92525;
 }
 
+.error {
+    color: #D92525;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #D92525;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
 
 /*----######################################### end header Style ###################----*/
 
