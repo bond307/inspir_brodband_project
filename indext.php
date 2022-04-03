@@ -4,9 +4,9 @@ $CurrentDate = date("Y-m-d");
     <!---- End headers-->
     <section id="body">
         <div class="col-md-6 offset-md-3">
-            <!-- <div class="error">
+            <div class="error">
                 <p id="error"></p>
-            </div> -->
+            </div>
 
             <div class="body__form">
             
@@ -262,13 +262,14 @@ PromotionalPackage.addEventListener('submit', e => {
         type: 'POST',
         data: $("#PromotionalPackage").serialize(),
         success: function(result) {
+              //show validation error
+              document.getElementById("error").innerHTML = result;          
             $("#btn").val("Submit");
             $("#btn").attr('disabled', false);
             fetch(scriptURL, { method: 'POST', body: new FormData(PromotionalPackage) }).then(response => alert("Thanks for Contacting us..! We Will Contact You Soon... Data send in google sheets"))
                 .catch(error => console.error('Error!', error.message))
 
-            //show validation error
-            document.getElementById("error").innerHTML = result;                                              
+                                              
 
         }
     })
