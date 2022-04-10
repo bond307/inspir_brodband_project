@@ -4,13 +4,13 @@ $CurrentDate = date("Y-m-d");
     <!---- End headers-->
     <section id="body">
         <div class="col-md-6 offset-md-3">
-            <div class="error">
+            <div class="error" id="error-div">
                 <p id="error"></p>
             </div>
 
             <div class="body__form">
             
-                    <select name="package_type" class="form-select mb-3" onchange="packeges()" id="choose_packegs">
+                    <select name="package_type"class="form-select mb-3" onchange="packeges()" id="choose_packegs">
                         <option selected disabled>Choose Your Offer</option>
                         <option value="Promotional">Promotional Package</option>
                         <option value="Regular">Regular Package</option>
@@ -66,7 +66,7 @@ $CurrentDate = date("Y-m-d");
                                 <div id="for_promotional_package">
                                     <!---------------- package plan ------------->
                                     <select required name="PromotionalPackage"  class="form-select form-control mb-3" aria-label="Default select example">
-                                            <option selected disabled>Package plan</option>
+                                            <option selected disabled>Promotional Package plan</option>
                                             <option value="package  1">package  1</option>
                                             <option value="package  2">package  2</option>
                                             <option value="package  3">package  3</option>
@@ -120,20 +120,20 @@ $CurrentDate = date("Y-m-d");
                     </div>
 
                     <div id="RegularpackageOffer">
-                        <form method="POST" name="Regularpackage" >
+                        <form method="POST" name="Regularpackage" id="Regularpackage" >
                                 <!---------------- full name ------------->
                                 <div class="mb-3 ">
-                                    <input type="text" class="form-control" id="full_name" placeholder="Full Name" name="FullName">
+                                    <input required type="text" class="form-control" id="full_name" placeholder="Full Name" name="FullName">
                                 </div>
                                 <!----------------/End full name ------------->
 
                                 <!---------------- Mobile Numbder and Email ------------->
                                 <div class="row">
                                     <div class="col-md-6 mb-3 ">
-                                        <input type="number" class="form-control" id="Mobile_Number" name="MobileNumber" placeholder="Mobile Number">
+                                        <input required type="number" class="form-control" id="Mobile_Number" name="MobileNumber" placeholder="Mobile Number">
                                     </div>
                                     <div class="col-md-6 mb-3 ">
-                                        <input type="text" class="form-control" id="Email" placeholder="Email" name="Email">
+                                        <input required type="text" class="form-control" id="Email" placeholder="Email" name="Email">
                                     </div>
                                 </div>
                                 <!----------------/End Mobile Numbder and Email ------------->
@@ -141,11 +141,11 @@ $CurrentDate = date("Y-m-d");
                                 <!---------------- Thana name and Area Name ------------->
                                 <div class="row ">
                                     <div class="col-md-6 mb-3 ">
-                                        <input type="number" class="form-control" id="Alt_Mobile_Number" name="ALTMobileNumber" placeholder="ALT Mobile Number">
+                                        <input required type="number" class="form-control" id="Alt_Mobile_Number" name="ALTMobileNumber" placeholder="ALT Mobile Number">
                                     </div>
 
                                     <div class="col-md-6 mb-3">
-                                        <select name="ThanaName" class="form-select form-control" id="regular_package_thana" >
+                                        <select name="ThanaName" class="form-select form-control" >
                                             <option selected disabled>Thana name</option>
                                             <option value="Mirpur Thana">Mirpur Thana</option>
                                             <option value="Pollobi Thana">Pollobi Thana</option>
@@ -159,7 +159,7 @@ $CurrentDate = date("Y-m-d");
 
                                 <!---------------- Address ------------->
                                 <div class="col-md-12 mb-3 ">
-                                    <textarea type="text" class="form-control" id="address" name="Address" placeholder="Address"></textarea>
+                                    <textarea required type="text" class="form-control" id="address" name="Address" placeholder="Address"></textarea>
                                 </div>
                                 <!---------------- /End  Address ------------->
 
@@ -170,7 +170,7 @@ $CurrentDate = date("Y-m-d");
                                         <!----------- col chceck monthly -------->
                                         <div class="col-md-6">
                                             <div class="form-check">
-                                                <input class="form-check-input" onClick="month_packeg()" value="Monthly Packeg" type="radio" name="PackageType" id="month_packeg">
+                                                <input required class="form-check-input" onClick="month_packeg()" value="Monthly Packeg" type="radio" name="PackageType" id="month_packeg">
                                                 <label class="form-check-label" onClick="month_packeg()" for="month_packeg">
                                                     Monthly Package
                                                 </label>
@@ -179,7 +179,7 @@ $CurrentDate = date("Y-m-d");
                                         <!----------- col chceck Yearlly -------->
                                         <div class="col-md-6">
                                             <div class="form-check">
-                                                <input class="form-check-input" onClick="yearly_packeg()" value="Yearly Packeg" type="radio" name="PackageType" id="yearly_packeg">
+                                                <input required class="form-check-input" onClick="yearly_packeg()" value="Yearly Packeg" type="radio" name="PackageType" id="yearly_packeg">
                                                 <label class="form-check-label" onClick="yearly_packeg()" for="yearly_packeg">
                                                         Yearly Package
                                                 </label>
@@ -188,7 +188,7 @@ $CurrentDate = date("Y-m-d");
                                     </div>
 
                                     <div class="col-md-12 mb-3 ">
-                                        <select name="MonthlyPackagePlan" id="monthly_packege_list" class="form-select form-control" aria-label="Default select example">
+                                        <select required name="MonthlyPackagePlan" id="monthly_packege_list" class="form-select form-control" aria-label="Default select example">
                                             <option selected disabled> Package Plan Monthly </option>
                                             <option value="Package Plan Monthly  1"> Package Plan Monthly  1</option>
                                             <option value="Package Plan Monthly 2"> Package Plan Monthly  2</option>
@@ -199,7 +199,7 @@ $CurrentDate = date("Y-m-d");
                                     </div>
 
                                     <div class="col-md-12 mb-3 ">
-                                        <select name="YearllyPackagePlan" id="yearlly_packege_list" class="form-select form-control" aria-label="Default select example">
+                                        <select required name="YearllyPackagePlan" id="yearlly_packege_list" class="form-select form-control" aria-label="Default select example">
                                             <option selected disabled>Package Plan Yearly</option>
                                             <option value="Package Plan Yearly 1">Package Plan Yearly 1</option>
                                             <option value="Package Plan Yearly 2">Package Plan Yearly 2</option>
@@ -213,7 +213,7 @@ $CurrentDate = date("Y-m-d");
 
                                 <!---------------- Google Map ------------->
                                 <div class="input-group col-md-6 mb-3">
-                                    <input type="map" readonly class="form-control" placeholder="Home Location (Select by Google Map)" name="home_location" aria-describedby="basic-addon2">
+                                    <input required type="map" readonly class="form-control" placeholder="Home Location (Select by Google Map)" name="home_location" aria-describedby="basic-addon2">
 
                                     <a href="https://www.google.com/maps" target="_blank" class="input-group-text innet_input_btn" id="basic-addon2"><i class="fa fa-map-marker" aria-hidden="true"></i>
                                     </a>
@@ -222,14 +222,15 @@ $CurrentDate = date("Y-m-d");
                                 
 
                                 <!---------------- Create Date ------------->
-                                <div class="input-group col-md-6 mb-3">
-                                    <input type="date" name="activation_Date" class="form-control" placeholder="Preferred Actiovation Date" aria-describedby="basic-addon2">
+                                <div required class="input-group col-md-6 mb-3">
+                                    <input type="date" name="ActivationDate" class="form-control" placeholder="Preferred Actiovation Date" aria-describedby="basic-addon2">
                                 </div>
                                 <!---------------- /End Create Date ------------->
 
-
+                                <!---------------- current date ----->
+                                <input type="hidden" name="Date" value="<?php echo $CurrentDate?>">
                             <!---------------- Button for Regular Packate------------->
-                            <button type="submit" id="regular_pkg_btn" class="btn btn-custom col-md-4 offset-md-4">Submit </button>
+                            <button type="submit" name="regular_pkg_btn" id="regular_pkg_btn" class="btn btn-custom col-md-4 offset-md-4">Submit </button>
                             
                         </form>
                     </div>
@@ -245,36 +246,4 @@ $CurrentDate = date("Y-m-d");
     </section>
 
 
-<script>
-const scriptURL = 'https://script.google.com/macros/s/AKfycbw2DqXIlTYe4pDKwjLGpulL9JgU_g1fTNiqmODyYI0Odzw9kPZMyoaBX4XoLg_ni2bLBg/exec';//google sheet link//
-const PromotionalPackage = document.forms['PromotionalPackage'];// PromotionalPackage form name as same google sheets
-
-
-
-PromotionalPackage.addEventListener('submit', e => {
-    e.preventDefault()
-
-    $("#btn").val("Please wait...");
-    $("#btn").attr('disabled', true);
-
-    $.ajax({
-        url: 'data//promotional-package.php',
-        type: 'POST',
-        data: $("#PromotionalPackage").serialize(),
-        success: function(result) {
-              //show validation error
-              document.getElementById("error").innerHTML = result;          
-            $("#btn").val("Submit");
-            $("#btn").attr('disabled', false);
-            fetch(scriptURL, { method: 'POST', body: new FormData(PromotionalPackage) }).then(response => alert("Thanks for Contacting us..! We Will Contact You Soon... Data send in google sheets"))
-                .catch(error => console.error('Error!', error.message))
-
-                                              
-
-        }
-    })
-    
-   
-})
-</script>
 <?php include("inc/footer.php")?>
