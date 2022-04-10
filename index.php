@@ -190,22 +190,27 @@ $CurrentDate = date("Y-m-d");
                                     <div class="col-md-12 mb-3 ">
                                         <select name="MonthlyPackagePlan" id="monthly_packege_list" class="form-select form-control" aria-label="Default select example">
                                             <option selected disabled> Package Plan Monthly </option>
-                                            <option value="Package Plan Monthly  1"> Package Plan Monthly  1</option>
-                                            <option value="Package Plan Monthly 2"> Package Plan Monthly  2</option>
-                                            <option value="Package Plan Monthly 3"> Package Plan Monthly  3</option>
-                                            <option value="Package Plan Monthly 4"> Package Plan Monthly  4</option>
-                                            <option value="Package Plan Monthly 5"> Package Plan Monthly  5</option>
+                                            <option value="pack_month_800"> ECONOMY ৳ 800 </option>
+                                            <option value="pack_month_1000"> VALUE ৳ 1000 </option>
+                                            <option value="pack_month_1200"> SPEED ৳ 1200 </option>
+                                            <option value="pack_month_1500"> MEGA ৳ 1500 </option>
+                                            <option value="pack_month_2000"> ULTRA ৳ 2000 </option>
+                                            <option value="pack_month_2500"> SUPER ULTRA ৳ 2500 </option>
+                                            <option value="pack_month_3000"> SUPER ULTRA ৳ 3000 </option>
+                                            
                                             </select>
                                     </div>
 
                                     <div class="col-md-12 mb-3 ">
                                         <select name="YearllyPackagePlan" id="yearlly_packege_list" class="form-select form-control" aria-label="Default select example">
                                             <option selected disabled>Package Plan Yearly</option>
-                                            <option value="Package Plan Yearly 1">Package Plan Yearly 1</option>
-                                            <option value="Package Plan Yearly 2">Package Plan Yearly 2</option>
-                                            <option value="Package Plan Yearly 3">Package Plan Yearly 3</option>
-                                            <option value="Package Plan Yearly 4">Package Plan Yearly 4</option>
-                                            <option value="Package Plan Yearly 5">Package Plan Yearly 5</option>
+                                            <option value="pack_year_9600"> ECONOMY ৳ 9600 </option>
+                                            <option value="pack_year_12000"> VALUE ৳ 12000 </option>
+                                            <option value="pack_year_14400"> SPEED ৳ 14400 </option>
+                                            <option value="pack_year_18000"> MEGA ৳ 18000 </option>
+                                            <option value="pack_year_24000"> ULTRA ৳ 24000 </option>
+                                            <option value="pack_year_30000"> SUPER ULTRA ৳ 30000 </option>
+                                            <option value="pack_year_36000"> SUPER ULTRA ৳ 36000 </option>
                                             </select>
                                     </div>
                                 </div>
